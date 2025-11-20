@@ -7,10 +7,10 @@ body {
 /* set list to horizontal*/
 
 /*global scaling*/
-/*img{
+img{
 	max-width: 100%;
 	height: auto;
-}*/
+}
 
 /*optimizing for mobile and tablet*/
 /*tablet and below*/
@@ -32,6 +32,29 @@ body {
 	.nav-links{
 		flex-direction: column; /*stack nanv links*/
 		gap: 1rem;
+	}
+
+	.gallery-wheel{
+		flex-wrap: nowrap;
+		overflow-x: auto;
+		scroll-snap-type: x mandatory;
+		-webkit-overflow-scrolling: touch;
+		animation: none;/*disable auto scroll on mobile*/
+	}
+
+	.gallery-item{
+		flex: 0 0 auto;
+		scroll-snap-align: start;
+	}
+
+	.gallery-item img{
+		width: 200px;
+		height: 130px;
+	}
+
+	/*invisible scroll bar*/
+	.gallery-wheel::-webkit-scrollbar{
+		display: none;
 	}
 }
 
