@@ -536,10 +536,10 @@ img{
 }
 
 /*Touch friendly buttons for apple*/
-button,.book-btn{
-	min-height: 44px; /*apple guideline for tap buttons*/
-	font-size: 1rem; /*readable size*/
-}
+/*button,.book-btn{
+	min-height: 44px;*/ /*apple guideline for tap buttons*/
+	/*font-size: 1rem; *//*readable size*/
+/*}*/
 
 .location-contianer{
 	padding: 2rem;
