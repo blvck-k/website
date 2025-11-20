@@ -300,7 +300,7 @@ body {
 .gallery-wheel{
 	display: flex;
 	gap: 1rem;
-	animation: scrollWheel 20s linear infinite; /*continuous scroll*/
+	animation: scrollWheel 60s linear infinite; /*continuous scroll*/
 }
 
 .gallery-item img{
