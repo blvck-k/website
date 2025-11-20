@@ -57,7 +57,7 @@ body {
 		overflow-x: auto;
 		scroll-snap-type: x mandatory;
 		-webkit-overflow-scrolling: touch;
-		animation: none;/*disable auto scroll on mobile*/
+		animation: scrollwheel 60s linear infinite;/*mobile scroll animation*/
 		width: max-content;
 	}
 
