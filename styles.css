@@ -131,6 +131,7 @@ body {
 .gallery-wheel {
     display: flex;
     gap: 1rem;
+    width: max-content;
     animation: scrollWheel 40s linear infinite;
 }
 
@@ -340,7 +341,7 @@ body {
 
 @keyframes scrollWheel {
     from { transform: translateX(0); }
-    to { transform: translateX(-100%); }
+    to { transform: translateX(-50%); }
 }
 
 /* =======================
@@ -387,7 +388,6 @@ body {
     .gallery-wheel {
         flex-wrap: nowrap;
         overflow-x: auto;
-        scroll-snap-type: x mandatory;
         animation: scrollWheel 40s linear infinite;
         width: max-content;
     }
