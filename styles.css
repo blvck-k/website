@@ -21,12 +21,13 @@ img{
 	}
 	
 	.home-image,.about-image{
-		height: 250px; /*fixed height for images*/
+		height: autopx; /*auto height for images*/
+		max-height: 250px;
 	}
 	
 	.home-text,.about-text{
 		padding: 1.5rem;
-		text-align: center; /*center text for moblie*/
+		text-align: -1rem; /*bring text closer*/
 	}
 	
 	.nav-links{
