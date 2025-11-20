@@ -6,6 +6,65 @@ body {
     }
 /* set list to horizontal*/
 
+/*global scaling*/
+img{
+	max-width: 100%;
+	height: auto;
+}
+
+/*optimizing for mobile and tablet*/
+/*tablet and below*/
+@media(max-width: 768px){
+	.home-container,.about-container{
+		flex-direction: column; /*stack vertically*/
+		min-height: auto; /*remove forced height*/
+	}
+	
+	.home-image,.about-image{
+		height: 250px; /*fixed height for images*/
+	}
+	
+	.home-text,.about-text{
+		padding: 1.5rem;
+		text-align: center; /*center text for moblie*/
+	}
+	
+	.nav-links{
+		flex-direction: column; /*stack nanv links*/
+		gap: 1rem;
+	}
+}
+
+/*Mobile Phones*/
+@media (max-width: 480px){
+	h1, h2{
+		font-size: 1.5rem; /*smaller headings*/
+	}
+	
+	p{
+		font-size: 0.95rem;
+		line-height: 1.4;
+	}
+	
+	.gallery-item img{
+		width: 180px;
+		height: 120px;
+	}
+	
+	.rooms-grid{
+		grid-template-columns: 1fr; /*single column*/
+	}
+	
+	.amenities-grid,.services-grid{
+		grid-template-columns: 1fr; /*stack items*/
+	}
+	
+	.book-btn{
+		width: 100%; /*full width button*/
+		margin: 0.5rem 0;
+	}
+}
+
 .nav-links{
 	list-style: none; /*remove bullets*/
 	margin: 0;
@@ -68,6 +127,12 @@ body {
 	font-size: 2rem;
 	margin-bottom: 1rem;
 	color: #38bdf8;
+}
+
+@media (max-width: 480px){
+	.home-text h1{
+		font-size: 1.5rem; /*mobile*/
+	}
 }
 
 .home-text p{
@@ -424,6 +489,12 @@ body {
 #booking-form button:hover{
 	background-color: #0ea5e9;
 	color: #ffffff;
+}
+
+/*Touch friendly buttons for apple*/
+button,.book-btn{
+	min-height: 44px; /*apple guideline for tap buttons*/
+	font-size: 1rem; /*readable size*/
 }
 
 .location-contianer{
