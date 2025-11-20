@@ -68,6 +68,9 @@ img{
 	.gallery-item img{
 		width: 200px;
 		height: 130px;
+		object-fit: cover;
+		max-width: none; /*cancel global img*/
+		height: 130px;
 	}
 
 	/*invisible scroll bar*/
