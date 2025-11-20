@@ -116,6 +116,7 @@ body {
 	display: flex; /*side by side layout*/
 	flex-direction: row-reverse; /*flips order*/
 	min-height: 100vh /*full viewport height*/
+	margin-bottom: 0px; /*spacing between section gallery and about us 20/11/2025*/
 }
 /* left side text*/
 .about-text{
@@ -125,7 +126,7 @@ body {
 	justify-content: center; /*vertical centering*/
 	padding: 2rem;
 	background-color: #0f172a;
-	color #ffffff;
+	color: #ffffff; /*fixed missing colon on 20/11/2025*/
 	animation: fadeInUp 1.2s ease-out forwards;
 }
 
