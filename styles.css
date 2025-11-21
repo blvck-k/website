@@ -432,8 +432,8 @@ body {
 /* Input field — match dark theme */
 .iti input[type="tel"],
 input[type="tel"].iti__tel-input {
-    background-color: #ffffff !important;   /* your dark color */
-    color: #ffffff !important;              /* white text */
+    background-color: #ffffff !important;   /* white color */
+    color: #000000 !important;              /* black text */
     border: 1px solid #38bdf8 !important;   /* accent border */
     padding-left: 3rem !important;          /* space for flag */
 }
