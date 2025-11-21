@@ -424,3 +424,51 @@ body {
         margin: 0.5rem 0;
     }
 }
+
+/* ================================
+   PHONE INPUT THEME OVERRIDES
+   ================================ */
+
+/* Input field — match dark theme */
+.iti input[type="tel"],
+input[type="tel"].iti__tel-input {
+    background-color: #0f172a !important;   /* your dark color */
+    color: #ffffff !important;              /* white text */
+    border: 1px solid #38bdf8 !important;   /* accent border */
+    padding-left: 3rem !important;          /* space for flag */
+}
+
+/* Country dropdown background */
+.iti__country-list {
+    background-color: #1e293b !important;   /* dark dropdown */
+    color: #fff !important;                 /* white text */
+    border: 1px solid #38bdf8 !important;   /* accent border */
+}
+
+/* Country name + dial code */
+.iti__country-list .iti__country {
+    color: #ffffff !important;
+}
+
+/* Hover effect */
+.iti__country-list .iti__country:hover {
+    background-color: #0ea5e9 !important;   /* accent blue */
+    color: #ffffff !important;
+}
+
+/* Selected flag container */
+.iti__selected-flag {
+    background-color: #1e293b !important;
+    border-radius: 5px 0 0 5px !important;
+}
+
+/* The little arrow dropdown icon */
+.iti__selected-flag .iti__arrow {
+    border-top-color: #38bdf8 !important;
+}
+
+/* Remove default white highlight around focused input */
+.iti input[type="tel"]:focus {
+    outline: none !important;
+    box-shadow: 0 0 0 2px #38bdf8 !important;
+}
