@@ -458,7 +458,7 @@ input[type="tel"].iti__tel-input {
 
 /* Selected flag container */
 .iti__selected-flag {
-    background-color: #1e293b !important;
+    background-color: #ffffff !important;
     border-radius: 5px 0 0 5px !important;
 }
 
